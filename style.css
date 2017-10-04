@@ -1,0 +1,28 @@
+
+@font-face {
+	font-family: murder;
+	src: url('../fonts/youmurdererbb_reg');
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+td {
+	font-style: slim;
+}
+
+.table {
+	padding:15px;
+	border-color:blue;
+	border-radius: 10px;
+}
+
+.container {
+	padding: 20px;
+}
+
+
+#scary{
+	font-family: murder;
+}

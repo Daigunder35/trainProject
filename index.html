@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Train Schedule</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		
+		<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	</head>
+
+<body>
+	<div class="jumbotron">
+		<h1 id="scary">"Abandon all hope, ye who enter here."</h1>
+		<h3> </h3>
+
+	</div>
+	
+	<div class="current-train-schedule container">
+		<div class="row">
+		<div class="col-md-12">
+			<table class="table employee-container">
+				<tr>
+					<th>Current Train Schedule</th>
+				</tr>
+				<tr>
+					<th>Train Name</th>
+					<th>Destination</th>
+					<th>Frequency(min)</th>
+					<th>Next Arrival</th>
+					<th>Minutes Away</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+	<div class="add-employee-container container">
+		<div class="row">
+		<div class="col-md-12">
+			<form>
+				<div class="form-group">
+					<label>Train Name</label>
+					<input type="text" class="form-control" id="trainName-input">
+
+					<label>Destination</label>
+					<input type="text" class="form-control" id="destination-input">
+
+					<label>Frequency (min)</label>
+	  				<input type="text" class="form-control" id="frequency-input">	
+
+					<label>First Train (HH:mm - military time)</label>
+	  				<input type="number" class="form-control" id="firstTrain-input">
+
+					
+				</div>
+	  		
+	    		<button id="send-button" class="btn">Send</button>
+    		
+    		</form>
+  </div>
+    </div>
+   </div>
+
+
+   <script type="text/javascript" src="js.js"></script>
+
+</body>
+</html>
